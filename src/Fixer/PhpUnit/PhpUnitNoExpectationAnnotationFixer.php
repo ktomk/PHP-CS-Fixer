@@ -265,7 +265,7 @@ final class MyTest extends \PHPUnit_Framework_TestCase
 
         $content = Preg::match('/@'.$tag.'\s+(.+)$/s', $annotation->getContent(), $matches)
             ? $matches[1]
-            : '';
+            : null;
         if (Preg::match('/\R/u', $content)) {
             $content = Preg::replace('/\s*\R+\s*\*\s*/u', ' ', $content);
         }
