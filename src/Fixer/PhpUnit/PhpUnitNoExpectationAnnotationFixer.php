@@ -257,7 +257,7 @@ final class MyTest extends \PHPUnit_Framework_TestCase
     /**
      * @param Annotation $annotation
      *
-     * @return string
+     * @return string|null
      */
     private function extractContentFromAnnotation(Annotation $annotation)
     {
